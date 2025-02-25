@@ -3048,7 +3048,7 @@
                     }
                     span{
                         color: var(--text);
-                        font-size: rem(14);
+                        font-size: 14px;
                     }
                 }
             }
@@ -3884,3 +3884,30 @@ iframe{
 
 
 
+
+
+//Sponsor 
+//Logo Sponsor Here
+.company__wrap {
+    .owl-item{
+        .company__logo{
+            img{
+                // filter: grayscale(25);
+                opacity: 0.5;
+                transition: all 0.4s;
+            }
+        }
+        &.active{
+            &.center{
+                .company__logo{
+                    img{
+                        // filter: grayscale(0);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//Logo Sponsor Here
+//Sponsor 

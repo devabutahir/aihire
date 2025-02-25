@@ -4,6 +4,9 @@
 .aihire__headertop{
 	// background: #F3F6FA;
 	padding: 24px 0;
+	@include breakpoint(max-xxl){
+		padding: 14px 0;
+	}
 }
 .haderbar__top{
 	justify-content: space-between;
@@ -14,6 +17,13 @@
 		}
 		@include breakpoint(max-xl){
 			gap: 14px;
+			.top__logo{
+				margin-right: 10px;
+				max-width: 100px;
+				img{
+					width: 100%;
+				}
+			}
 		}
 		@include breakpoint(max-md){
 			.top__logo{
@@ -280,18 +290,18 @@
 				font-size: 20px;
 			}
 			@include breakpoint(max-xs){
-				width: 30px;
-				height: 30px;
+				width: 40px;
+				height: 40px;
 				i{
-					font-size: 18px;
+					font-size: 14px;
 				}
 			}
 		}
 		@include breakpoint(max-xl){
-			gap: 14px;
+			gap: 8px;
 		}
 		@include breakpoint(max-lg){
-			gap: 10px;
+			gap: 4px;
 		}
 		.profie__dropdown{
 			.dropdown-menu{
@@ -364,9 +374,17 @@
 				box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.06);
 				border-radius: 16px;
 				background: var(--white);
+				.dropdown-item.active, .dropdown-item:active {
+					color: transparent;
+					text-decoration: none;
+					background-color: transparent;
+				}
 				.dropdown-item{
 					padding: 0;
 					gap: 10px;
+					&:hover{
+						background: transparent;
+					}
 					.notification__thumb{
 						width: 60px;
 						height: 60px;
@@ -401,10 +419,25 @@
 		}
 	}
 }
+.dropdown-item.active, .dropdown-item:active {
+	color: transparent;
+	text-decoration: none;
+	background-color: transparent;
+}
+.dropdown-menu{
+	.list{
+		background: transparent;
+		a{
+			span{
+				color: #000 !important;
+			}
+		}
+	}
+}
 @media screen and (max-width: 991px){
 	.main-menu {
 		position: absolute;
-		top: 58px;
+		top: 56px;
 		width: 100%;
 		left: 0;
 		display: inline !important;
@@ -419,8 +452,7 @@
 		&:not(.active) {
 			position: absolute;
 			left: 0;
-			top: 85px;
-			display: none !important;
+			transform: rotateX(-90deg);
 		}
 		li {
 			width: 100%;
@@ -620,10 +652,10 @@
 	background: var(--white);
 	box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
 	@include breakpoint(max-xs){
-		width: 30px;
-		height: 30px;
+		width: 36px;
+		height: 36px;
 		i{
-			font-size: 18px;
+			font-size: 16px;
 		}
 	}
 }

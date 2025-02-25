@@ -1561,6 +1561,11 @@ p {
 .aihire__headertop {
   padding: 24px 0;
 }
+@media (max-width: 1399px) {
+  .aihire__headertop {
+    padding: 14px 0;
+  }
+}
 
 .haderbar__top {
   justify-content: space-between;
@@ -1574,6 +1579,13 @@ p {
 @media (max-width: 1199px) {
   .haderbar__top .logo__left {
     gap: 14px;
+  }
+  .haderbar__top .logo__left .top__logo {
+    margin-right: 10px;
+    max-width: 100px;
+  }
+  .haderbar__top .logo__left .top__logo img {
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -1855,21 +1867,21 @@ p {
 }
 @media (max-width: 500px) {
   .header-wrapper .menu__components .glose__icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
   .header-wrapper .menu__components .glose__icon i {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 @media (max-width: 1199px) {
   .header-wrapper .menu__components {
-    gap: 14px;
+    gap: 8px;
   }
 }
 @media (max-width: 991px) {
   .header-wrapper .menu__components {
-    gap: 10px;
+    gap: 4px;
   }
 }
 .header-wrapper .menu__components .profie__dropdown .dropdown-menu {
@@ -1937,9 +1949,17 @@ p {
   border-radius: 16px;
   background: var(--white);
 }
+.header-wrapper .menu__components .notification__dropdown .dropdown-menu .dropdown-item.active, .header-wrapper .menu__components .notification__dropdown .dropdown-menu .dropdown-item:active {
+  color: transparent;
+  text-decoration: none;
+  background-color: transparent;
+}
 .header-wrapper .menu__components .notification__dropdown .dropdown-menu .dropdown-item {
   padding: 0;
   gap: 10px;
+}
+.header-wrapper .menu__components .notification__dropdown .dropdown-menu .dropdown-item:hover {
+  background: transparent;
 }
 .header-wrapper .menu__components .notification__dropdown .dropdown-menu .dropdown-item .notification__thumb {
   width: 60px;
@@ -1971,10 +1991,23 @@ p {
   content: "";
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  color: transparent;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.dropdown-menu .list {
+  background: transparent;
+}
+.dropdown-menu .list a span {
+  color: #000 !important;
+}
+
 @media screen and (max-width: 991px) {
   .main-menu {
     position: absolute;
-    top: 58px;
+    top: 56px;
     width: 100%;
     left: 0;
     display: inline !important;
@@ -1990,8 +2023,7 @@ p {
   .main-menu:not(.active) {
     position: absolute;
     left: 0;
-    top: 85px;
-    display: none !important;
+    transform: rotateX(-90deg);
   }
   .main-menu li {
     width: 100%;
@@ -2160,11 +2192,11 @@ p {
 }
 @media (max-width: 500px) {
   #searchBtn {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
   }
   #searchBtn i {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -4396,7 +4428,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   font-family: "Inter", sans-serif;
-  color: var(--text);
+  color: var(--n500);
 }
 .range__barcustom .field input span {
   font-size: 16px;
@@ -5912,7 +5944,7 @@ p {
 }
 .cheat__user .edit__user .dropdown-menu li a span {
   color: var(--text);
-  font-size: rem(14);
+  font-size: 14px;
 }
 
 .chat__search {
@@ -6727,6 +6759,14 @@ iframe {
   iframe {
     height: 280px;
   }
+}
+
+.company__wrap .owl-item .company__logo img {
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+.company__wrap .owl-item.active.center .company__logo img {
+  opacity: 1;
 }
 
 @keyframes cir90 {
