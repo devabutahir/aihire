@@ -816,12 +816,18 @@
     }
 }
 .app__thumb{
+    animation: updown 2s linear infinite;
     @include breakpoint(max-lg){
         max-width: 400px;
         margin: 0 auto 15px;
         img{
             width: 100%;
         }
+    }
+}
+@keyframes updown {
+    50%{
+        transform: translateY(10px);
     }
 }
 //app Section//

@@ -2333,6 +2333,7 @@ p {
 
 .banner__thumb2 {
   margin-top: -180px;
+  animation: lefta 2s linear infinite;
 }
 @media (max-width: 1600px) {
   .banner__thumb2 {
@@ -2360,6 +2361,11 @@ p {
   }
 }
 
+@keyframes lefta {
+  50% {
+    transform: translateX(-10px);
+  }
+}
 @media (max-width: 1600px) {
   .banner__twospace {
     padding: 80px 0 100px;
@@ -3680,6 +3686,9 @@ p {
   }
 }
 
+.app__thumb {
+  animation: updown 2s linear infinite;
+}
 @media (max-width: 991px) {
   .app__thumb {
     max-width: 400px;
@@ -3690,6 +3699,11 @@ p {
   }
 }
 
+@keyframes updown {
+  50% {
+    transform: translateY(10px);
+  }
+}
 .task__hiresection::before {
   position: absolute;
   bottom: 0;

@@ -95,6 +95,7 @@
 }
 .banner__thumb2{
     margin-top: -180px;
+    animation: lefta 2s linear infinite;
     @include breakpoint(max-xxxl){
         margin-top: -100px;
         width: 600px;
@@ -112,6 +113,11 @@
         margin-left: -70px;
         width: 550px;
         margin-top: -50px;
+    }
+}
+@keyframes lefta {
+    50%{
+        transform: translateX(-10px);
     }
 }
 .banner__twospace{
