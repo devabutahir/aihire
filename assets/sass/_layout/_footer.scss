@@ -7,7 +7,7 @@
 .quick__link{
     li{
         &:not(:last-child){
-            margin-bottom: 7px;
+            margin-bottom: 11px;
         }
         a{
             &:hover{
@@ -54,9 +54,9 @@
     }
     form{
         justify-content: space-between;
-        border-radius: 100px;
+        border-radius: 10px;
         border: 1px solid var(--base);
-        padding: 8px;
+        padding: 4px;
         input{
             outline: none;
             height: 52px;
@@ -127,6 +127,13 @@
         flex-wrap: wrap;
         gap: 2px 20px;
         justify-content: center;
+    }
+    li{
+        a{
+            &:hover{
+                color: var(--base2) !important;
+            }
+        }
     }
 }
 //footer

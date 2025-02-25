@@ -948,7 +948,7 @@ p {
 }
 
 .social {
-  gap: 12px;
+  gap: 6px;
 }
 .social li a {
   width: 36px;
@@ -962,7 +962,7 @@ p {
 }
 .social li a i {
   color: var(--white);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .socialbase li a {
@@ -7294,7 +7294,7 @@ iframe {
 }
 
 .quick__link li:not(:last-child) {
-  margin-bottom: 7px;
+  margin-bottom: 11px;
 }
 .quick__link li a:hover {
   color: var(--hover);
@@ -7334,9 +7334,9 @@ iframe {
 }
 .footer__item form {
   justify-content: space-between;
-  border-radius: 100px;
+  border-radius: 10px;
   border: 1px solid var(--base);
-  padding: 8px;
+  padding: 4px;
 }
 .footer__item form input {
   outline: none;
@@ -7413,6 +7413,9 @@ iframe {
     gap: 2px 20px;
     justify-content: center;
   }
+}
+.help__support li a:hover {
+  color: var(--base2) !important;
 }
 
 .cmn__form {
